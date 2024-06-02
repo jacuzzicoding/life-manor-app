@@ -6,13 +6,14 @@
     <title>Orca Life Management System</title>
 </head>
 <body>
-    <h1>Tasks</h1>
+    <h1>Orca Life Management System</h1>
+    <h2>Tasks</h2>
     <ul>
         {% for task in tasks %}
             <li>{{ task.name }} - {{ task.deadline }} - {{ task.priority }} - {{ task.duration }} hours</li>
         {% endfor %}
     </ul>
-    <h2>Add Task</h2>
+    <h3>Add Task</h2>
     <form action="/add_task" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br>
