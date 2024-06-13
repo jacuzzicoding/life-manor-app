@@ -8,3 +8,4 @@ import bcrypt
 import spacy
 
 app = Flask(__name__)
+api = Api(app) 
